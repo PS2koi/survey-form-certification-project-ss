@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<div class="container">
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p class = "subtext" id="description">This survey form is intended to find out what kind of <span class="pink">GAMER</span> you are.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name-label" id = "name-label">Name <div class = "roundedbox"> <input id="name" name="name" type="text" placeholder="Enter your name here.." required /></label></div>
+        
+        <label for="number-label" id ="number-label">Age <div class = "roundedbox"> <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age here.."/></label></div>
+        
+        <label for="email-label" id = "email-label">Email <div class = "roundedbox"><input id="email" name="email" type="email" placeholder="Enter your email here.." required /></label></div>
+        <label for="whatkind"><p>What kind of <span class="pink">GAMER</span> are you?</p>
+          <div class = "roundedbox">
+        <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Console</option>
+            <option value="2">PC</option>
+            <option value="3">None (Just here to look around?)</option>
+          </select>
+          </div>
+        <label for="consoles"><p>What consoles do you play on?</p>
+         <div class = "roundedbox">
+        <input class="inline" id="consoles" type="checkbox" required name="consoles" value="Nintendo" />Nintendo</a>
+      <br>
+      <input class="inline" id="consoles" type="checkbox" required name="consoles" value="Playstation" />Playstation</a>
+      <br>
+  <input class="inline" id="consoles" type="checkbox" required name="consoles" value="Xbox"/>Xbox</a>
+  <br>
+<input class="inline" id="consoles" type="checkbox" required name="consoles" value="N/A"/>N/A</a>
+  </div>
+  </label>
+      
+        <p>What PC Launcher do you use?</p>
+    <div class = "roundedbox">
+        <label for="epic-games"><input id="epic-games" type="radio" name="PC Launcher" class="inline" value="Epic Games" checked /> Epic Games</label>
+        <label for="origin/ea"><input id="origin/ea" type="radio" name="PC Launcher" class="inline" value="Origin/EA" /> Origin/EA</label>
+     <label for="steam"><input id="steam" type="radio" name="PC Launcher" class="inline" value="Steam"/> Steam</label>
+     <label for="All of them"><input id="All of them" type="radio" name="PC Launcher" class="inline" value="All of them"/> All of them (I envy your courage.)</label>
+    <label for="n/a"><input id="n/a" type="radio" name="PC Launcher" class="inline" value="n/a" /> N/A</label>
+    </div>
+    </fieldset>
+<label for="comment"><p>Any comments <span class="pink">GAMER?</span></p>
+    <div class = "roundedbox">
+         <textarea type="text" id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+  </div>
+  <br> 
+  <input type="submit" id="submit" value="Submit!" />
+    </div>
+    </form>
+</body>
+</html>
